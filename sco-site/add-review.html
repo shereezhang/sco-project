@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>School Course Optimizer</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <style type="text/css">
+    .checkbox-grid li {
+    display: block;
+    float: left;
+    width: 15%;
+    }
+
+
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">School Course Optimizer</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="careers.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="streams.html">Streams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="add-review.html">Add Review</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Add a Course Review
+      </h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Add A Review</li>
+      </ol>
+
+      <!-- Content Row -->
+      <div class="row">
+
+      </div>
+      <!-- /.row -->
+
+      <!-- Review Form -->
+      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+      <div class="row">
+        <div class="col-lg-8 mb-4">
+          <form name="sentReview" id="reviewForm" novalidate>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Year (ex. 1T9+PEY):</label>
+                <input type="text" class="form-control" id="year" required data-validation-required-message="Please enter your year.">
+                <p class="help-block"></p>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Course ID:</label>
+                <input type="courseID" class="form-control" id="course" required data-validation-required-message="Please enter a course ID.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Professor(s):</label>
+                <input type="prof" class="form-control" id="prof" required data-validation-required-message="Please enter at least one professor's name.">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Review:</label>
+                <textarea rows="10" cols="100" class="form-control" id="review" required data-validation-required-message="Please write your review of the course." maxlength="999" style="resize:none"></textarea>
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>If you are on PEY or went on PEY, what company did you work at and what was your position title?</label>
+                  <div class="item form-inline">
+                  <label for="company">Company:</label>
+                  <input type="text" id="company" name="company" />
+                  <br />
+                  </div>
+                  <div class="item form-inline">
+                  <input type="checkbox" class="form-control" id="dA" name="job []" value="Data Analyst">
+                  <label for="dA">Data Analyst</label>
+                  <br />
+                  </div>
+                  <div class="item form-inline">
+                  <input type="checkbox" class="form-control" id="consult" name="job []" value="Consultant">
+                  <label for="consult">Consultant</label>
+                  <br />
+                  </div>
+                  <div class="item form-inline">
+                  <input type="checkbox" class="form-control" id="sW" name="job []" value="Software">
+                  <label for="sW">Software</label>
+                  <br />
+                  </div>
+                  <div class="item form-inline">
+                  <input type="checkbox" class="form-control" id="pM" name="job []" value="Project Manager">
+                  <label for="pM">Project Manager</label>
+                  <br />
+                  </div>
+                  <div class="item form-inline">
+                  <input type="checkbox" class="form-control" id="hF" name="job []" value="Human Factors">
+                  <label for="hF">Human Factors</label>
+                  <br />
+                  </div>
+                  <div class="item form-inline">
+                  <input type="checkbox" class="form-control" id="uX" name="job []" value="UX/UI Designer">
+                  <label for="uX">UX/UI Designer</label>
+                  <br />
+                  </div>
+                  <div class="item form-inline">
+                  <input type="checkbox" class="form-control" id="sC" name="job []" value="Supply Chain">
+                  <label for="sC">Supply Chain</label>
+                  <br />
+                  </div>
+                  <div class="item form-inline">
+                  <input type="checkbox" class="form-control" id="idk" name="job []" value="I don't know yet">
+                  <label for="idk">I don't know yet</label>
+                  <br />
+                  </div>
+                  <div class="item form-inline">
+                  <input type="checkbox" class="form-control" id="other" name="job []" value="Other:" onclick="if(this.checked){ document.getElementById('ot').focus();}"/>
+                  <label for="other">Other:</label>
+                  <input type="text" id="ot" name="ot" />
+                  <br />
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <br />
+              <div class="controls">
+                <label>Which course(s) is this class related to? (eg. MIE253 is related to MIE350)</label>
+                <input type="related" class="form-control" id="related">
+              </div>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>Please rate the following course aspects (1-not helpful at all, 5-very helpful, select N/A if not applicable):</label>
+                <input type="ratings" class="form-control" id="ratings" required data-validation-required-message="Please enter a rating for each course aspect, select N/A if not applicable.">
+                <div>
+                  <ul class="checkbox-grid">
+                    <li><input type="checkbox" name="le1" value="le1" />
+                    <li><input type="checkbox" name="le2" value="le2" />
+                    <li><input type="checkbox" name="le3" value="le3" />
+                    <li><input type="checkbox" name="le4" value="le4" />
+                    <li><input type="checkbox" name="le5" value="le5" />
+                    <li><input type="checkbox" name="le_na" value="le_na" />
+                    <li><input type="checkbox" name="te1" value="te1" />
+                    <li><input type="checkbox" name="te2" value="te2" />
+                    <li><input type="checkbox" name="te3" value="te3" />
+                    <li><input type="checkbox" name="te4" value="te4" />
+                    <li><input type="checkbox" name="te5" value="te5" />
+                    <li><input type="checkbox" name="te_na" value="te_na" />
+                    <li><input type="checkbox" name="ir1" value="ir1" />
+                    <li><input type="checkbox" name="ir2" value="ir2" />
+                    <li><input type="checkbox" name="ir3" value="ir3" />
+                    <li><input type="checkbox" name="ir4" value="ir4" />
+                    <li><input type="checkbox" name="ir5" value="ir5" />
+                    <li><input type="checkbox" name="ir_na" value="ir_na" />
+                    <li><input type="checkbox" name="tu1" value="tu1" />
+                    <li><input type="checkbox" name="tu2" value="tu2" />
+                    <li><input type="checkbox" name="tu3" value="tu3" />
+                    <li><input type="checkbox" name="tu4" value="tu4" />
+                    <li><input type="checkbox" name="tu5" value="tu5" />
+                    <li><input type="checkbox" name="tu_na" value="tu_na" />
+                    <li><input type="checkbox" name="pr1" value="pr1" />
+                    <li><input type="checkbox" name="pr2" value="pr2" />
+                    <li><input type="checkbox" name="pr3" value="pr3" />
+                    <li><input type="checkbox" name="pr4" value="pr4" />
+                    <li><input type="checkbox" name="pr5" value="pr5" />
+                    <li><input type="checkbox" name="pr_na" value="pr_na" />
+                    <li><input type="checkbox" name="ti1" value="ti1" />
+                    <li><input type="checkbox" name="ti2" value="ti2" />
+                    <li><input type="checkbox" name="ti3" value="ti3" />
+                    <li><input type="checkbox" name="ti4" value="ti4" />
+                    <li><input type="checkbox" name="ti5" value="ti5" />
+                    <li><input type="checkbox" name="ti_na" value="ti_na" />
+                    <li><input type="checkbox" name="od1" value="od1" />
+                    <li><input type="checkbox" name="od2" value="od2" />
+                    <li><input type="checkbox" name="od3" value="od3" />
+                    <li><input type="checkbox" name="od4" value="od4" />
+                    <li><input type="checkbox" name="od5" value="od5" />
+                    <li><input type="checkbox" name="od_na" value="od_na" />
+
+
+
+                  </ul>
+                </br>
+                </br>
+                </div>
+              </div>
+            </div>
+          </br>
+          </br>
+            <div id="success"></div>
+            <!-- For success/fail messages -->
+            <button type="submit" class="btn btn-primary" id="sendReviewButton">Submit Review</button>
+          </form>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+  </body>
+
+</html>
