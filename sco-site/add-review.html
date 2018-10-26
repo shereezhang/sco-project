@@ -23,8 +23,6 @@
     width: 15%;
     }
 
-
-
     </style>
 
   </head>
@@ -113,58 +111,59 @@
             <div class="control-group form-group">
               <div class="controls">
                 <label>If you are on PEY or went on PEY, what company did you work at and what was your position title?</label>
-                  <div class="item form-inline">
-                  <label for="company">Company:</label>
-                  <input type="text" id="company" name="company" />
-                  <br />
-                  </div>
+                <input type="company" class="form-control" id="company">
+              </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>What jobs is this course relevant to?</label>
                   <div class="item form-inline">
                   <input type="checkbox" class="form-control" id="dA" name="job []" value="Data Analyst">
-                  <label for="dA">Data Analyst</label>
+                  <label for="dA">&emsp;Data Analyst </label>
                   <br />
                   </div>
                   <div class="item form-inline">
                   <input type="checkbox" class="form-control" id="consult" name="job []" value="Consultant">
-                  <label for="consult">Consultant</label>
+                  <label for="consult">&emsp;Consultant</label>
                   <br />
                   </div>
                   <div class="item form-inline">
                   <input type="checkbox" class="form-control" id="sW" name="job []" value="Software">
-                  <label for="sW">Software</label>
+                  <label for="sW">&emsp;Software</label>
                   <br />
                   </div>
                   <div class="item form-inline">
                   <input type="checkbox" class="form-control" id="pM" name="job []" value="Project Manager">
-                  <label for="pM">Project Manager</label>
+                  <label for="pM">&emsp;Project Manager</label>
                   <br />
                   </div>
                   <div class="item form-inline">
                   <input type="checkbox" class="form-control" id="hF" name="job []" value="Human Factors">
-                  <label for="hF">Human Factors</label>
+                  <label for="hF">&emsp;Human Factors</label>
                   <br />
                   </div>
                   <div class="item form-inline">
                   <input type="checkbox" class="form-control" id="uX" name="job []" value="UX/UI Designer">
-                  <label for="uX">UX/UI Designer</label>
+                  <label for="uX">&emsp;UX/UI Designer</label>
                   <br />
                   </div>
                   <div class="item form-inline">
                   <input type="checkbox" class="form-control" id="sC" name="job []" value="Supply Chain">
-                  <label for="sC">Supply Chain</label>
+                  <label for="sC">&emsp;Supply Chain</label>
                   <br />
                   </div>
                   <div class="item form-inline">
                   <input type="checkbox" class="form-control" id="idk" name="job []" value="I don't know yet">
-                  <label for="idk">I don't know yet</label>
+                  <label for="idk">&emsp;I don't know yet</label>
                   <br />
                   </div>
                   <div class="item form-inline">
                   <input type="checkbox" class="form-control" id="other" name="job []" value="Other:" onclick="if(this.checked){ document.getElementById('ot').focus();}"/>
-                  <label for="other">Other:</label>
+                  <label for="other">&emsp;Other:&nbsp;&nbsp;&nbsp;</label>
                   <input type="text" id="ot" name="ot" />
                   <br />
               </div>
             </div>
+          </div>
             <div class="control-group form-group">
               <br />
               <div class="controls">
@@ -177,7 +176,15 @@
                 <label>Please rate the following course aspects (1-not helpful at all, 5-very helpful, select N/A if not applicable):</label>
                 <input type="ratings" class="form-control" id="ratings" required data-validation-required-message="Please enter a rating for each course aspect, select N/A if not applicable.">
                 <div>
+
                   <ul class="checkbox-grid">
+                    <li><label> 1 <label/>
+                    <li><label> 2 <label/>
+                    <li><label> 3 <label/>
+                    <li><label> 4 <label/>
+                    <li><label> 5 <label/>
+                    <li><label> N/A <label/>
+
                     <li><input type="checkbox" name="le1" value="le1" />
                     <li><input type="checkbox" name="le2" value="le2" />
                     <li><input type="checkbox" name="le3" value="le3" />
@@ -246,7 +253,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+        <p class="m-0 text-center text-white">SCO 2018</p>
       </div>
       <!-- /.container -->
     </footer>
