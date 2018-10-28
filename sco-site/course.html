@@ -16,6 +16,143 @@
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
 
+    <style>
+      .bar-graph {
+        padding: 0;
+        width: 100%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-items: flex-end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        height: 425px;
+        margin: 0;
+      }
+
+      .bar-graph li {
+        display: block;
+        padding: 1.5625rem 0;
+        position: relative;
+        text-align: center;
+        vertical-align: bottom;
+        border-radius: 4px 4px 0 0;
+        max-width: 20%;
+        height: 100%;
+        margin: 0 1.8% 0 0;
+        -webkit-flex: 1 1 15%;
+            -ms-flex: 1 1 15%;
+                flex: 1 1 15%;
+      }
+
+      .bar-graph .bar-graph-axis {
+        -webkit-flex: 1 1 8%;
+            -ms-flex: 1 1 8%;
+                flex: 1 1 8%;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+      }
+
+      .bar-graph .bar-graph-label {
+        margin: 0;
+        background-color: none;
+        color: #8a8a8a;
+        position: relative;
+      }
+
+      @media print, screen and (min-width: 40em) {
+        .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+          content: "";
+          position: absolute;
+          border-bottom: 1px dashed #8a8a8a;
+          top: 0;
+          left: 0;
+          height: 50%;
+          width: 20%;
+        }
+      }
+
+      @media print, screen and (min-width: 40em) and (min-width: 64em) {
+        .bar-graph .bar-graph-label:before, .bar-graph .bar-graph-label:after {
+          width: 30%;
+        }
+      }
+
+      @media print, screen and (min-width: 40em) {
+        .bar-graph .bar-graph-label:after {
+          left: auto;
+          right: 0;
+        }
+      }
+
+      .bar-graph .percent {
+        letter-spacing: -3px;
+        opacity: 0.4;
+        width: 100%;
+        font-size: 1.875rem;
+        position: absolute;
+      }
+
+      @media print, screen and (min-width: 40em) {
+        .bar-graph .percent {
+          font-size: 2.875rem;
+        }
+      }
+
+      .bar-graph .percent span {
+        font-size: 1.875rem;
+      }
+
+      .bar-graph .description {
+        font-weight: 800;
+        opacity: 0.5;
+        text-transform: uppercase;
+        width: 100%;
+        font-size: 12px;
+        bottom: 20px;
+        position: absolute;
+        font-size: 0.7rem;
+        overflow: hidden;
+      }
+
+      .bar-graph .bar.lecture {
+        background: linear-gradient(#ee3131, #bb1c1c 70%);
+      }
+
+      .bar-graph .bar.textbook {
+        background: linear-gradient(#ff6400, #da5200 70%);
+      }
+
+      .bar-graph .bar.industry-relevance {
+        background: linear-gradient(#ffe330, #e2c300 70%);
+      }
+
+      .bar-graph .bar.tutorial {
+        background: linear-gradient(#30f236, #05af0a 70%);
+      }
+
+      .bar-graph .bar.practical {
+        background: linear-gradient(#3bccf4, #0194bc 70%);
+      }
+
+      .bar-graph .bar.time-investment {
+        background: linear-gradient(#e7b9f8, #b772d1 70%);
+      }
+
+      .bar-graph .bar.overall-difficulty {
+        background: linear-gradient(#fa9adb, #f71bb0 70%);
+      }
+
+    </style>
+
+
   </head>
 
   <body>
@@ -53,8 +190,8 @@
     <div class="container">
 
       <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Post Title
-        <small>by
+      <h1 class="mt-4 mb-3">Course Code
+        <small>course name
           <a href="#">Start Bootstrap</a>
         </small>
       </h1>
@@ -63,16 +200,55 @@
         <li class="breadcrumb-item">
           <a href="index.html">Home</a>
         </li>
-        <li class="breadcrumb-item active">Blog Home 2</li>
+        <li class="breadcrumb-item active">Course Code</li>
       </ol>
 
       <div class="row">
 
         <!-- Post Content Column -->
         <div class="col-lg-8">
+          
+          <p class="lead">Course description</p>
 
-          <!-- Preview Image -->
-          <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+          <ul class="bar-graph">
+            <li class="bar-graph-axis">
+              <div class="bar-graph-label">100%</div>
+              <div class="bar-graph-label">80%</div>
+              <div class="bar-graph-label">60%</div>
+              <div class="bar-graph-label">40%</div>
+              <div class="bar-graph-label">20%</div>
+              <div class="bar-graph-label">0%</div>
+            </li>
+            <li class="bar lecture" style="height: 95%;" title="95">
+              <div class="percent">95<span>%</span></div>
+              <div class="description">Lecture</div>
+            </li>
+            <li class="bar textbook" style="height: 90%;" title="90">
+              <div class="percent">90<span>%</span></div>
+              <div class="description">Textbook</div>
+            </li>
+            <li class="bar industry-relevance" style="height: 80%;" title="80">
+              <div class="percent">80<span>%</span></div>
+              <div class="description">Industry Relevance</div>
+            </li>
+            <li class="bar tutorial" style="height: 75%;" title="75">
+              <div class="percent">75<span>%</span></div>
+              <div class="description">Tutorial</div>
+            </li>
+            <li class="bar practical" style="height: 40%;" title="40">
+              <div class="percent">40<span>%</span></div>
+              <div class="description">Practical</div>
+            </li>
+            <li class="bar time-investment" style="height: 40%;" title="40">
+              <div class="percent">40<span>%</span></div>
+              <div class="description">Time Investment</div>
+            </li>
+            <li class="bar overall-difficulty" style="height: 40%;" title="40">
+              <div class="percent">40<span>%</span></div>
+              <div class="description">Overall Difficulty</div>
+            </li>
+
+          </ul>
 
           <hr>
 
@@ -82,7 +258,7 @@
           <hr>
 
           <!-- Post Content -->
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+
 
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
 
@@ -169,7 +345,7 @@
 
           <!-- Categories Widget -->
           <div class="card my-4">
-            <h5 class="card-header">Categories</h5>
+            <h5 class="card-header">Relevant Jobs</h5>
             <div class="card-body">
               <div class="row">
                 <div class="col-lg-6">
@@ -204,9 +380,9 @@
 
           <!-- Side Widget -->
           <div class="card my-4">
-            <h5 class="card-header">Side Widget</h5>
+            <h5 class="card-header">Hashtags</h5>
             <div class="card-body">
-              You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+              hashtags? relevant/related courses?
             </div>
           </div>
 
