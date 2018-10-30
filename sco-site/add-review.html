@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    
+
 <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -114,10 +114,17 @@
             </div>
             <div class="control-group form-group">
               <div class="controls">
-                <label>If you are on PEY or went on PEY, what company did you work at and what was your position title?</label>
+                <label>If you are on PEY or went on PEY, what company do/did you work at?</label>
                 <input type="company" class="form-control" id="company">
               </div>
-              </br>
+            </div>
+            <div class="control-group form-group">
+              <div class="controls">
+                <label>If you are on PEY or went on PEY, what is/was your position title?</label>
+                <input type="position" class="form-control" id="position">
+              </div>
+            </div>
+
             <div class="control-group form-group">
               <div class="controls">
                 <label>What jobs is this course relevant to?</label>
@@ -182,15 +189,15 @@
                 <label>How would you rate the usefulness of this course's lectures? (1-not helpful at all, 5-very helpful, select N/A if not applicable)</label>
                   <div class="item form-inline">
                     <label for="le1">1&emsp;</label>
-                    <input type="checkbox" id="le1" name="le1" value="le1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="le1" name="le" value="le1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="le2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2&emsp;</label>
-                    <input type="checkbox" id="le2" name="le2" value="le2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="le2" name="le" value="le2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="le3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3&emsp;</label>
-                    <input type="checkbox" id="le3" name="le3" value="le3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="le3" name="le" value="le3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="le4">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4&emsp;</label>
-                    <input type="checkbox" id="le4" name="le4" value="le4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="le4" name="le" value="le4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="le5">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5&emsp;</label>
-                    <input type="checkbox" id="le5" name="le5" value="le5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="le5" name="le" value="le5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                   </div>
                   </br>
                 </div>
@@ -199,15 +206,15 @@
                 <label>How would you rate the usefulness of this course's textbook? (1-not helpful at all, 5-very helpful, select N/A if not applicable)</label>
                   <div class="item form-inline">
                     <label for="te1">1&emsp;</label>
-                    <input type="checkbox" id="te1" name="te1" value="te1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="te1" name="te" value="te1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="te2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2&emsp;</label>
-                    <input type="checkbox" id="te2" name="te2" value="te2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="te2" name="te" value="te2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="te3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3&emsp;</label>
-                    <input type="checkbox" id="te3" name="te3" value="te3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="te3" name="te" value="te3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="te4">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4&emsp;</label>
-                    <input type="checkbox" id="te4" name="te4" value="te4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="te4" name="te" value="te4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="te5">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5&emsp;</label>
-                    <input type="checkbox" id="te5" name="te5" value="te5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="te5" name="te" value="te5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                   </div>
                   </br>
                 </div>
@@ -216,15 +223,15 @@
                 <label>How would you rate the level of industry relevance of this course's material? (1-not relevant at all, 5-very relevant, select N/A if not applicable)</label>
                   <div class="item form-inline">
                     <label for="ir1">1&emsp;</label>
-                    <input type="checkbox" id="ir1" name="ir1" value="ir1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="ir1" name="ir" value="ir1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="ir2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2&emsp;</label>
-                    <input type="checkbox" id="ir2" name="ir2" value="ir2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="ir2" name="ir" value="ir2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="ir3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3&emsp;</label>
-                    <input type="checkbox" id="ir3" name="ir3" value="ir3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="ir3" name="ir" value="ir3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="ir4">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4&emsp;</label>
-                    <input type="checkbox" id="ir4" name="ir4" value="ir4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="ir4" name="ir" value="ir4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="ir5">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5&emsp;</label>
-                    <input type="checkbox" id="ir5" name="ir5" value="ir5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="ir5" name="ir" value="ir5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                   </div>
                   </br>
                 </div>
@@ -233,15 +240,15 @@
                 <label>How would you rate the usefulness of this course's tutorials? (1-not helpful at all, 5-very helpful, select N/A if not applicable)</label>
                   <div class="item form-inline">
                     <label for="tu1">1&emsp;</label>
-                    <input type="checkbox" id="tu1" name="tu1" value="tu1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="tu1" name="tu" value="tu1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="tu2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2&emsp;</label>
-                    <input type="checkbox" id="tu2" name="tu2" value="tu2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="tu2" name="tu" value="tu2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="tu3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3&emsp;</label>
-                    <input type="checkbox" id="tu3" name="tu3" value="tu3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="tu3" name="tu" value="tu3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="tu4">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4&emsp;</label>
-                    <input type="checkbox" id="tu4" name="tu4" value="tu4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="tu4" name="tu" value="tu4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="tu5">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5&emsp;</label>
-                    <input type="checkbox" id="tu5" name="tu5" value="tu5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="tu5" name="tu" value="tu5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                   </div>
                   </br>
                 </div >
@@ -250,15 +257,15 @@
                 <label>How would you rate the usefulness of this course's practicals? (1-not helpful at all, 5-very helpful, select N/A if not applicable)</label>
                   <div class="item form-inline">
                     <label for="pr1">1&emsp;</label>
-                    <input type="checkbox" id="pr1" name="pr1" value="pr1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="pr1" name="pr" value="pr1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="pr2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2&emsp;</label>
-                    <input type="checkbox" id="pr2" name="pr2" value="pr2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="pr2" name="pr" value="pr2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="pr3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3&emsp;</label>
-                    <input type="checkbox" id="pr3" name="pr3" value="pr3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="pr3" name="pr" value="pr3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="pr4">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4&emsp;</label>
-                    <input type="checkbox" id="pr4" name="pr4" value="pr4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="pr4" name="pr" value="pr4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="pr5">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5&emsp;</label>
-                    <input type="checkbox" id="pr5" name="pr5" value="pr5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="pr5" name="pr" value="pr5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                   </div>
                   </br>
                 </div>
@@ -267,15 +274,15 @@
                 <label>How would you rate the time investment required for this course? (1-very low, 5-very high, select N/A if not applicable)</label>
                   <div class="item form-inline">
                     <label for="ti1">1&emsp;</label>
-                    <input type="checkbox" id="ti1" name="ti1" value="ti1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="ti1" name="ti" value="ti1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="ti2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2&emsp;</label>
-                    <input type="checkbox" id="ti2" name="ti2" value="ti2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="ti2" name="ti" value="ti2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="ti3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3&emsp;</label>
-                    <input type="checkbox" id="ti3" name="ti3" value="ti3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="ti3" name="ti" value="ti3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="ti4">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4&emsp;</label>
-                    <input type="checkbox" id="ti4" name="ti4" value="ti4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="ti4" name="ti" value="ti4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="ti5">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5&emsp;</label>
-                    <input type="checkbox" id="ti5" name="ti5" value="ti5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="ti5" name="ti" value="ti5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                   </div>
                   </br>
                 </div>
@@ -284,15 +291,15 @@
                 <label>How would you rate the overall difficulty of this course? (1-not very difficult at all, 5-very difficult, select N/A if not applicable)</label>
                   <div class="item form-inline">
                     <label for="od1">1&emsp;</label>
-                    <input type="checkbox" id="od1" name="od1" value="od1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="od1" name="od" value="od1" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="od2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2&emsp;</label>
-                    <input type="checkbox" id="od2" name="od2" value="od2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="od2" name="od" value="od2" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="od3">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;3&emsp;</label>
-                    <input type="checkbox" id="od3" name="od3" value="od3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="od3" name="od" value="od3" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="od4">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;4&emsp;</label>
-                    <input type="checkbox" id="od4" name="od4" value="od4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="od4" name="od" value="od4" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                     <label for="od5">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;5&emsp;</label>
-                    <input type="checkbox" id="od5" name="od5" value="od5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
+                    <input type="radio" id="od5" name="od" value="od5" required data-validation-required-message="Please enter a rating, select N/A if not applicable."/>
                   </div>
                 </div>
             </div>
