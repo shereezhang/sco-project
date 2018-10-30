@@ -27,3 +27,16 @@ body {
 .portfolio-item {
   margin-bottom: 30px;
 }
+
+.text-block {
+    position: relative;
+    background: rgba(0, 0, 0, 0.35);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 span {
+  color: white;
+}
